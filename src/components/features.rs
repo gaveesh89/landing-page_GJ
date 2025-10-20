@@ -18,7 +18,7 @@ pub fn FeaturesSection() -> impl IntoView {
                     <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         <FeatureCard
                             icon="⚡"
-                            title="High Performance"
+                            title="High Performance and low power"
                             description="Built with Rust for unmatched speed, safety, and reliability in production environments."
                         />
                         <FeatureCard
@@ -28,18 +28,18 @@ pub fn FeaturesSection() -> impl IntoView {
                         />
                         <FeatureCard
                             icon="🚀"
-                            title="Scalable Architecture"
-                            description="Future-proof solutions that grow with your business needs and handle increasing demands."
+                            title="SIMD Scalable Architecture"
+                            description="Save a fortune in GPU costs by using advanced SIMD techniques."
                         />
                         <FeatureCard
                             icon="🛠️"
-                            title="Expert Development"
+                            title="Compiler engineers"
                             description="Seasoned professionals with deep expertise in modern technologies and best practices."
                         />
                         <FeatureCard
                             icon="☁️"
-                            title="Cloud Native"
-                            description="Multi-cloud expertise across AWS, Azure, and Google Cloud with platform-agnostic skills."
+                            title="Computer science lead"
+                            description="Using cutting-edge techniques to drive innovation and efficiency."
                         />
                         <FeatureCard
                             icon="📊"
