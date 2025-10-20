@@ -25,7 +25,7 @@ fn App() -> impl IntoView {
 #[component]
 fn HomePage() -> impl IntoView {
     view! {
-        <Title text="Company Landing Page"/>
+        <Title text="Atomic Increment Ltd."/>
         <div class="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
             <Header/>
             <HeroSection/>
