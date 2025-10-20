@@ -14,30 +14,15 @@ pub fn TestimonialsSection() -> impl IntoView {
                     </p>
                 </div>
                 
-                <div class="mt-20">
-                    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
-                        <TestimonialCard
-                            quote="The team delivered exceptional results with their Rust expertise. Our application performance improved by 300% while maintaining perfect security standards."
-                            author="Sarah Johnson"
-                            role="CTO, TechCorp"
-                        />
-                        <TestimonialCard
-                            quote="Outstanding technical leadership and delivery. They transformed our proof-of-concept into a production-ready system that scales effortlessly."
-                            author="Michael Chen"
-                            role="Engineering Director, DataFlow Inc"
-                        />
-                        <TestimonialCard
-                            quote="Their security-first approach and cloud expertise helped us build a robust platform that our customers trust completely."
-                            author="Emily Rodriguez"
-                            role="VP Engineering, SecureBase"
-                        />
-                        <TestimonialCard
-                            quote="Incredible depth of knowledge and practical application. The training program elevated our entire development team's capabilities."
-                            author="David Kim"
-                            role="Lead Developer, InnovateLabs"
-                        />
-                    </div>
-                </div>
+                // <div class="mt-20">
+                //     <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                //         <TestimonialCard
+                //             quote="The team delivered exceptional results with their Rust expertise. Our application performance improved by 300% while maintaining perfect security standards."
+                //             author="Sarah Johnson"
+                //             role="CTO, TechCorp"
+                //         />
+                //     </div>
+                // </div>
             </div>
         </section>
     }

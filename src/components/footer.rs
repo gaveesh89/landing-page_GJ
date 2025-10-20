@@ -59,9 +59,7 @@ pub fn Footer() -> impl IntoView {
                             "Contact"
                         </h3>
                         <ul class="space-y-3">
-                            <li class="text-gray-300">"info@atomicincrement.com"</li>
-                            <li class="text-gray-300">"+1 (555) 123-4567"</li>
-                            <li class="text-gray-300">"San Francisco, CA"</li>
+                            <li class="text-gray-300">"andy@atomicincrement.com"</li>
                         </ul>
                     </div>
                 </div>

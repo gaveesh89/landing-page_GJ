@@ -24,7 +24,7 @@ pub fn Header() -> impl IntoView {
                             <a href="/" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
                                 "Home"
                             </a>
-                            <a href="/services" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+                            <a href="#services" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
                                 "Services"
                             </a>
                             <a href="/about" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
@@ -33,7 +33,7 @@ pub fn Header() -> impl IntoView {
                             <a href="/blog" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
                                 "Blog"
                             </a>
-                            <a href="/contact" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+                            <a href="#contact" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
                                 "Contact"
                             </a>
                         </div>
@@ -73,7 +73,7 @@ pub fn Header() -> impl IntoView {
                                 <a href="/" class="text-gray-900 hover:text-blue-600 block px-3 py-2 text-base font-medium">
                                     "Home"
                                 </a>
-                                <a href="/services" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
+                                <a href="#services" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
                                     "Services"
                                 </a>
                                 <a href="/about" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
@@ -82,7 +82,7 @@ pub fn Header() -> impl IntoView {
                                 <a href="/blog" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
                                     "Blog"
                                 </a>
-                                <a href="/contact" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
+                                <a href="#contact" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
                                     "Contact"
                                 </a>
                                 <a href="/consultation" class="block w-full text-left px-3 py-2 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md mt-4">

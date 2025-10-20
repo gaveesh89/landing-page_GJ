@@ -3,7 +3,7 @@ use leptos::*;
 #[component]
 pub fn FeaturesSection() -> impl IntoView {
     view! {
-        <section class="py-20 bg-gray-50">
+        <section id="services" class="py-20 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
