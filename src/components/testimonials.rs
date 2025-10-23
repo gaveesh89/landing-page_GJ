@@ -3,7 +3,7 @@ use leptos::*;
 #[component]
 pub fn TestimonialsSection() -> impl IntoView {
     view! {
-        <section class="py-20 bg-white">
+        <section id="about" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
