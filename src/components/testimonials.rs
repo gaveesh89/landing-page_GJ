@@ -14,15 +14,20 @@ pub fn TestimonialsSection() -> impl IntoView {
                     </p>
                 </div>
                 
-                // <div class="mt-20">
-                //     <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
-                //         <TestimonialCard
-                //             quote="The team delivered exceptional results with their Rust expertise. Our application performance improved by 300% while maintaining perfect security standards."
-                //             author="Sarah Johnson"
-                //             role="CTO, TechCorp"
-                //         />
-                //     </div>
-                // </div>
+                <div class="mt-20">
+                    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                        <TestimonialCard
+                            quote="Amy is a fantastic, engaging educator with exceptional technical knowledge. They are also able to bring their extensive real-world experience into the classroom."
+                            author="Ian Watson"
+                            role="Framework Training"
+                        />
+                        <TestimonialCard
+                            quote="Amy covered Rust succinctly over a 3-day workshop for a group of 15 engineers from various disciplines. Amy interleaved many relevant anecdotes to keep the course engaging. I would thoroughly recommend Amy as an excellent Rust instructor."
+                            author="Gajinder Panesar"
+                            role="Chief Architect, Optalysys."
+                        />
+                    </div>
+                </div>
             </div>
         </section>
     }
