@@ -37,8 +37,8 @@ fn HomePage() -> impl IntoView {
     }
 }
 
-#[wasm_bindgen]
+#[wasm_bindgen(start)]
 pub fn main() {
     console_error_panic_hook::set_once();
-    mount_to_body(App)
+    leptos::mount_to_body(|| view! { <App/> })
 }

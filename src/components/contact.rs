@@ -7,36 +7,19 @@ pub fn ContactSection() -> impl IntoView {
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                        "Ready to Get Started?"
+                        "ENGAGEMENT INITIATION. SUBMIT PROJECT PARAMETERS"
                     </h2>
-                    <p class="mt-4 text-xl text-gray-600">
-                        "Let's discuss how we can help accelerate your project"
-                    </p>
                 </div>
                 
                 <div class="mt-16">
                     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
                         <ContactCard
-                            icon="📧"
+                            icon=""
                             title="Email Us"
                             description="Get in touch for project inquiries and consultations"
                             action="andy@atomicincrement.com"
                             link="mailto:andy@atomicincrement.com"
                         />
-                        // <ContactCard
-                        //     icon="📍"
-                        //     title="Visit Us"
-                        //     description="Our office location for in-person meetings"
-                        //     action="35 Bourne Road, Pangbourne RG8 7DK, UK"
-                        //     link=""
-                        // />
-                        // <ContactCard
-                        //     icon="📅"
-                        //     title="Book Consultation"
-                        //     description="Schedule a free technical consultation"
-                        //     action="Book Now"
-                        //     link="/consultation"
-                        // />
                     </div>
                 </div>
                 

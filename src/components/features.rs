@@ -7,44 +7,35 @@ pub fn FeaturesSection() -> impl IntoView {
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                        "What Makes Us Different"
+                        "CORE CAPABILITIES"
                     </h2>
-                    <p class="mt-4 text-xl text-gray-600">
-                        "Our expertise spans across modern technologies and proven methodologies"
-                    </p>
                 </div>
                 
                 <div class="mt-20">
                     <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         <FeatureCard
-                            icon="⚡"
-                            title="High Performance and low power"
-                            description="Built with Rust for unmatched speed, safety, and reliability in production environments."
+                            title="PERFORMANCE-CRITICAL SYSTEMS"
+                            description="Architected with Rust for unmatched speed, safety, and reliability in production environments."
                         />
                         <FeatureCard
-                            icon="🔒"
-                            title="Security First"
-                            description="Security-by-design approach ensuring robust and protected solutions from the ground up."
+                            title="MEMORY SAFETY MANDATE"
+                            description="Security-by-design approach ensuring robust, protected solutions. Eliminate common vulnerabilities at the compiler level."
                         />
                         <FeatureCard
-                            icon="🚀"
-                            title="SIMD Scalable Architecture"
-                            description="Save a fortune in GPU costs by using advanced SIMD techniques."
+                            title="SIMD OPTIMIZATION"
+                            description="Advanced SIMD techniques deployed for maximum throughput and cost-efficient computation."
                         />
                         <FeatureCard
-                            icon="🛠️"
-                            title="Compiler engineers"
-                            description="Seasoned professionals with deep expertise in modern technologies and best practices."
+                            title="SYSTEMS-LEVEL EXPERTISE"
+                            description="Seasoned professionals with deep expertise in Rust's compiler, ownership model, and tooling ecosystems."
                         />
                         <FeatureCard
-                            icon="☁️"
-                            title="Computer science lead"
-                            description="Using cutting-edge techniques to drive innovation and efficiency."
+                            title="ARCHITECTURAL PRECISION"
+                            description="Leveraging advanced computer science principles to drive innovation and efficiency in systems design."
                         />
                         <FeatureCard
-                            icon="📊"
-                            title="Data Driven"
-                            description="Comprehensive solutions spanning data processing, AI, and advanced analytics capabilities."
+                            title="DATA INTEGRITY"
+                            description="Comprehensive solutions for high-throughput data processing and advanced analytics, built on Rust's reliability."
                         />
                     </div>
                 </div>
@@ -55,14 +46,12 @@ pub fn FeaturesSection() -> impl IntoView {
 
 #[component]
 fn FeatureCard(
-    icon: &'static str,
     title: &'static str,
     description: &'static str,
 ) -> impl IntoView {
     view! {
         <div class="relative group">
             <div class="bg-white rounded-lg shadow-md p-6 h-full hover:shadow-lg transition-shadow duration-300">
-                <div class="text-4xl mb-4">{icon}</div>
                 <h3 class="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
                 <p class="text-gray-600">{description}</p>
             </div>

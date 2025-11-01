@@ -3,66 +3,72 @@ use leptos::*;
 #[component]
 pub fn HeroSection() -> impl IntoView {
     view! {
-        <section id="home" class="relative bg-white overflow-hidden">
-            <div class="max-w-7xl mx-auto">
-                <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-                    <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-                        <polygon points="50,0 100,0 50,100 0,100"/>
-                    </svg>
-
-                    <div class="pt-10 mx-auto max-w-7xl px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-20 lg:px-8 xl:pt-28">
-                        <div class="sm:text-center lg:text-left">
-                            <h1 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
-                                <span class="block">"Rust Training"</span>
-                                <span class="block">"Blockchain building"</span>
-                                <span class="block">"Data science"</span>
-                            </h1>
-                            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                                "Cutting edge solutions to data analysis for the modern AI enabled world."
-                            </p>
-                            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                                <div class="rounded-md shadow">
-                                    <a href="/consultation" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-colors">
-                                        "Start Your Project"
-                                    </a>
-                                </div>
-                                <div class="mt-3 sm:mt-0 sm:ml-3">
-                                    <a href="/about" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10 transition-colors">
-                                        "Learn More"
-                                    </a>
+        <div class="relative isolate overflow-hidden">
+            <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
+                <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
+                    <h1 class="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                        "ACCELERATE SYSTEMS ENGINEERS."
+                    </h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">
+                        "IMPLEMENT ROBUST, PERFORMANCE-CRITICAL INFRASTRUCTURE. NAVIGATE RUST'S OWNERSHIP MODEL WITH SPECIALIZED GUIDANCE."
+                    </p>
+                    <div class="mt-10 flex items-center gap-x-6">
+                        <a
+                            href="#contact"
+                            class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                        >
+                            "INITIATE CONSULTATION"
+                        </a>
+                        <a href="#services" class="text-sm font-semibold leading-6 text-gray-900">
+                            "REVIEW CAPABILITIES"
+                            <span aria-hidden="true">"→"</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mt-0 lg:mr-0 lg:max-w-none lg:flex-none xl:ml-32">
+                    <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
+                        <div class="relative w-[40rem] h-[30rem] sm:w-[57rem] md:-ml-4 lg:-ml-0">
+                            <div class="h-full w-full rounded-xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-8 shadow-2xl ring-1 ring-slate-700">
+                                <div class="flex flex-col h-full justify-between">
+                                    <div>
+                                        <div class="flex items-center space-x-2 mb-6">
+                                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                                            <span class="ml-4 text-slate-400 text-sm font-mono">"systems/core.rs"</span>
+                                        </div>
+                                        <pre class="text-xs sm:text-sm text-slate-300 font-mono leading-relaxed overflow-x-auto">
+                                            <code>
+<span class="text-purple-400">"use"</span>" std::sync::Arc;\n"
+<span class="text-purple-400">"use"</span>" tokio::sync::RwLock;\n\n"
+<span class="text-blue-400">"#[derive(Debug, Clone)]"</span>"\n"
+<span class="text-purple-400">"pub struct"</span>" "<span class="text-yellow-300">"SystemCore"</span>"<T: Send + Sync> {\n"
+"    state: Arc<RwLock<T>>,\n"
+"    metrics: "<span class="text-yellow-300">"PerformanceMetrics"</span>",\n"
+"}\n\n"
+<span class="text-purple-400">"impl"</span>"<T: Send + Sync> "<span class="text-yellow-300">"SystemCore"</span>"<T> {\n"
+"    "<span class="text-purple-400">"pub async fn"</span>" "<span class="text-green-400">"process"</span>"(&self) -> "<span class="text-yellow-300">"Result"</span>"<(), Error> {\n"
+"        "<span class="text-purple-400">"let"</span>" guard = self.state."<span class="text-green-400">"read"</span>"()."<span class="text-purple-400">"await"</span>";\n"
+"        "<span class="text-slate-500">"// Zero-cost abstraction"</span>"\n"
+"        "<span class="text-purple-400">"Ok"</span>"(())\n"
+"    }\n"
+"}"
+                                            </code>
+                                        </pre>
+                                    </div>
+                                    <div class="mt-4 pt-4 border-t border-slate-700">
+                                        <div class="flex justify-between items-center text-xs text-slate-400 font-mono">
+                                            <span>"⚡ ZERO-COST ABSTRACTIONS"</span>
+                                            <span>"🔒 MEMORY SAFE"</span>
+                                            <span>"⚙️ THREAD SAFE"</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                <div class="h-56 w-full bg-gradient-to-r from-blue-400 to-purple-500 sm:h-72 md:h-96 lg:w-full lg:h-full flex items-center justify-center">
-                    <div class="text-center text-white">
-                        <div class="flex justify-center space-x-8 mb-6">
-                            // Rust Ferris Logo
-                            <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center p-2">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Original_Ferris.svg" 
-                                     alt="Ferris the Rust mascot" 
-                                     class="w-full h-full object-contain"/>
-                            </div>
-                            // Ethereum Logo
-                            <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-                                <svg class="w-12 h-12" viewBox="0 0 256 417" fill="currentColor">
-                                    <path d="M127.961 0l-2.795 9.5v275.668l2.795 2.79 127.962-75.638z"/>
-                                    <path d="M127.962 0L0 212.32l127.962 75.639V154.158z"/>
-                                    <path d="M127.961 312.187l-1.575 1.92v98.199l1.575 4.6L256 236.587z"/>
-                                    <path d="M127.962 416.905v-104.72L0 236.585z"/>
-                                    <path d="M127.961 287.958l127.96-75.637-127.96-58.162z"/>
-                                    <path d="M0 212.32l127.96 75.638v-133.8z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <p class="text-lg font-medium">"Building the Future"</p>
-                        <p class="text-sm mt-2 opacity-90">"Rust • Blockchain • Innovation"</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     }
 }

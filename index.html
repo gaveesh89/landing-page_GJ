@@ -17,16 +17,8 @@
         }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link data-trunk rel="rust" data-wasm-opt="z"/>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="module">
-        import init, { main } from './pkg/landing_page.js';
-        async function run() {
-            await init();
-            main();
-        }
-        run();
-    </script>
 </body>
 </html>
