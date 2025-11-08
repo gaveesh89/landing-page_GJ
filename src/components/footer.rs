@@ -100,12 +100,6 @@ pub fn Footer() -> impl IntoView {
                                 <li>
                                     <a href="/blog" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center group">
                                         <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                                        "Case Studies"
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://atomicincrement.github.io/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center group">
-                                        <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                                         "Blog"
                                     </a>
                                 </li>

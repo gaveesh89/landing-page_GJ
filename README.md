@@ -10,8 +10,9 @@ A modern, high-performance landing page and blog system built with Rust and Lept
 ## 🚀 Live Demo
 
 - **Website**: [http://127.0.0.1:8080](http://127.0.0.1:8080) (development)
-- **Case Studies**: [http://127.0.0.1:8080/blog](http://127.0.0.1:8080/blog)
+- **Blog**: [http://127.0.0.1:8080/blog](http://127.0.0.1:8080/blog)
 - **About Page**: [http://127.0.0.1:8080/about](http://127.0.0.1:8080/about)
+- **Engagement Form**: [http://127.0.0.1:8080/engagement](http://127.0.0.1:8080/engagement)
 
 ## ✨ Features
 
@@ -24,16 +25,26 @@ A modern, high-performance landing page and blog system built with Rust and Lept
 - **Recent Projects**: Horizontal scrolling project showcase
 - **About Founder**: Dedicated about page with professional information
 - **Contact Section**: Professional contact form and information
+- **Engagement Form**: Comprehensive project initiation with architectural review process
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+
+### 🎯 **Professional Engagement System**
+- **Project Parameters**: Comprehensive form for technical requirements
+- **Budget & Timeline**: Structured ranges for project planning
+- **Technical Assessment**: Current stack and infrastructure evaluation
+- **Success Metrics**: KPI definition and measurement criteria
+- **Architectural Review**: 48-hour professional project assessment
+- **Clear Process**: Transparent next steps and consultation workflow
 
 ### 🧭 **Navigation Structure**
 - **Home**: Main landing page with all sections
-- **Services**: Quick navigation to services section
+- **Services**: Scrolls to "Areas of Expertise" section on homepage
 - **About**: Dedicated founder and company information page
-- **Case Studies**: Internal blog system with technical posts and tutorials
+- **Blog**: Internal blog system with technical posts and tutorials
 - **Contact**: Direct link to contact section
+- **Get Started**: Professional engagement form for project initiation
 
-### 📝 **Blog System (Case Studies)**
+### 📝 **Blog System**
 - **Markdown Support**: Full markdown parsing with frontmatter
 - **Professional Styling**: Dark theme with purple accents and hover effects
 - **Technical Content**: 4 comprehensive case studies and tutorials
@@ -101,8 +112,8 @@ landing-page_GJ/
 │   ├── 📄 blog.rs                   # Blog system with markdown parsing
 │   ├── 📁 components/               # Reusable UI components
 │   │   ├── 📄 mod.rs               # Component module exports
-│   │   ├── 📄 header.rs            # Navigation header with case studies link
-│   │   ├── 📄 hero.rs              # Hero section with tech visualization
+│   │   ├── 📄 header.rs            # Navigation header with blog navigation
+│   │   ├── 📄 hero.rs              # Hero section with engagement CTA
 │   │   ├── 📄 features.rs          # Areas of expertise grid
 │   │   ├── 📄 testimonials.rs      # Customer testimonials
 │   │   ├── 📄 contact.rs           # Professional contact form
@@ -110,6 +121,7 @@ landing-page_GJ/
 │   └── 📁 pages/                   # Page components
 │       ├── 📄 mod.rs               # Page module exports
 │       ├── 📄 about.rs             # About founder page
+│       ├── 📄 engagement.rs        # Professional engagement form
 │       └── 📄 blog.rs              # Blog list and post pages
 ├── 📁 content/
 │   └── 📁 posts/                   # Blog post markdown files
@@ -220,7 +232,15 @@ Key test coverage:
 4. Push to the branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
-## � Recent Updates
+## 📋 Recent Updates
+
+### **v1.2.0** - November 8, 2025
+- ✅ **Engagement Form**: Professional project initiation form with comprehensive parameters
+- ✅ **Enhanced CTA**: Hero banner and header buttons now lead to engagement form
+- ✅ **Services Navigation**: Updated to scroll directly to "Areas of Expertise" section
+- ✅ **Blog Terminology**: Consistent "Blog" terminology across header and footer
+- ✅ **Footer Cleanup**: Removed external blog link, streamlined navigation
+- ✅ **Professional Workflow**: Clear engagement process with architectural review
 
 ### **v1.1.0** - November 8, 2025
 - ✅ **Navigation Simplified**: Removed external "Blog" link from header navigation

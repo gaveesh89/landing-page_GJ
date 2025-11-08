@@ -9,6 +9,7 @@ use components::*;
 mod pages;
 use pages::about::AboutPage;
 use pages::blog::{BlogListPage, BlogPostPage};
+use pages::engagement::EngagementPage;
 
 mod blog;
 
@@ -23,6 +24,7 @@ fn App() -> impl IntoView {
                 <Routes>
                     <Route path="" view=HomePage/>
                     <Route path="/about" view=AboutPage/>
+                    <Route path="/engagement" view=EngagementPage/>
                     <Route path="/blog" view=BlogListPage/>
                     <Route path="/blog/:slug" view=BlogPostPage/>
                 </Routes>

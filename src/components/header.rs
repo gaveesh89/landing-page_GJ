@@ -24,14 +24,14 @@ pub fn Header() -> impl IntoView {
                             <a href="/" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
                                 "Home"
                             </a>
-                            <a href="#services" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+                            <a href="/#expertise" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
                                 "Services"
                             </a>
                             <a href="/about" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
                                 "About"
                             </a>
                             <a href="/blog" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
-                                "Case Studies"
+                                "Blog"
                             </a>
                             <a href="#contact" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
                                 "Contact"
@@ -41,7 +41,7 @@ pub fn Header() -> impl IntoView {
 
                     // CTA button and mobile menu button
                     <div class="flex items-center space-x-4">
-                        <a href="/consultation" class="hidden sm:inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors">
+                        <a href="/engagement" class="hidden sm:inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors">
                             "Get Started"
                         </a>
                         
@@ -73,19 +73,19 @@ pub fn Header() -> impl IntoView {
                                 <a href="/" class="text-gray-900 hover:text-blue-600 block px-3 py-2 text-base font-medium">
                                     "Home"
                                 </a>
-                                <a href="#services" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
+                                <a href="/#expertise" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
                                     "Services"
                                 </a>
                                 <a href="/about" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
                                     "About"
                                 </a>
                                 <a href="/blog" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
-                                    "Case Studies"
+                                    "Blog"
                                 </a>
                                 <a href="#contact" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
                                     "Contact"
                                 </a>
-                                <a href="/consultation" class="block w-full text-left px-3 py-2 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md mt-4">
+                                <a href="/engagement" class="block w-full text-left px-3 py-2 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md mt-4">
                                     "Get Started"
                                 </a>
                             </div>
