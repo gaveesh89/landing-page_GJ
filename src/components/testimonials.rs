@@ -9,19 +9,22 @@ pub fn TestimonialsSection() -> impl IntoView {
                     <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
                         "What Our Clients Say"
                     </h2>
+                    <p class="mt-4 text-xl text-gray-600">
+                        "Trusted by leading organizations worldwide"
+                    </p>
                 </div>
                 
                 <div class="mt-20">
                     <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
                         <TestimonialCard
-                            quote="Atomic Increment accelerated our team's adoption timeline by 60%. Their guidance on the ownership model was non-negotiable for our embedded systems project."
-                            author="VP of Engineering"
-                            role="Global Infrastructure Firm"
+                            quote="Amy is a fantastic, engaging educator with exceptional technical knowledge. They are also able to bring their extensive real-world experience into the classroom."
+                            author="Ian Watson"
+                            role="Framework Training"
                         />
                         <TestimonialCard
-                            quote="The transition from C++ to Rust was de-risked by their architectural review. Production deployment achieved 4x performance gain on core logic."
-                            author="Chief Architect"
-                            role="High-Frequency Trading Platform"
+                            quote="Amy covered Rust succinctly over a 3-day workshop for a group of 15 engineers from various disciplines. Amy interleaved many relevant anecdotes to keep the course engaging. I would thoroughly recommend Amy as an excellent Rust instructor."
+                            author="Gajinder Panesar"
+                            role="Chief Architect, Optalysys"
                         />
                     </div>
                 </div>
