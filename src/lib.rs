@@ -6,6 +6,9 @@ use wasm_bindgen::prelude::*;
 mod components;
 use components::*;
 
+mod pages;
+use pages::about::AboutPage;
+
 #[component]
 fn App() -> impl IntoView {
     provide_meta_context();
@@ -16,6 +19,7 @@ fn App() -> impl IntoView {
             <main>
                 <Routes>
                     <Route path="" view=HomePage/>
+                    <Route path="/about" view=AboutPage/>
                 </Routes>
             </main>
         </Router>
@@ -32,6 +36,7 @@ fn HomePage() -> impl IntoView {
             <FeaturesSection/>
             <TestimonialsSection/>
             <CoreCapabilitiesSection/>
+            <AboutFounderSection/>
             <ContactSection/>
             <Footer/>
         </div>
