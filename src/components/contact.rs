@@ -4,12 +4,12 @@ use leptos::ev::SubmitEvent;
 #[component]
 pub fn ContactSection() -> impl IntoView {
     let (submitted, set_submitted) = create_signal(false);
-    let (entity_name, set_entity_name) = create_signal(String::new());
-    let (role_title, set_role_title) = create_signal(String::new());
-    let (contact_email, set_contact_email) = create_signal(String::new());
-    let (project_scope, set_project_scope) = create_signal(String::new());
-    let (budget_allocation, set_budget_allocation) = create_signal(String::new());
-    let (timeline, set_timeline) = create_signal(String::new());
+    let (_entity_name, set_entity_name) = create_signal(String::new());
+    let (_role_title, set_role_title) = create_signal(String::new());
+    let (_contact_email, set_contact_email) = create_signal(String::new());
+    let (_project_scope, set_project_scope) = create_signal(String::new());
+    let (_budget_allocation, set_budget_allocation) = create_signal(String::new());
+    let (_timeline, set_timeline) = create_signal(String::new());
 
     let on_submit = move |ev: SubmitEvent| {
         ev.prevent_default();

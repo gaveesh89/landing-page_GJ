@@ -30,6 +30,9 @@ pub fn Header() -> impl IntoView {
                             <a href="/about" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
                                 "About"
                             </a>
+                            <a href="/blog" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+                                "Case Studies"
+                            </a>
                             <a href="https://atomicincrement.github.io/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
                                 "Blog"
                             </a>
@@ -78,6 +81,9 @@ pub fn Header() -> impl IntoView {
                                 </a>
                                 <a href="/about" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
                                     "About"
+                                </a>
+                                <a href="/blog" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
+                                    "Case Studies"
                                 </a>
                                 <a href="https://atomicincrement.github.io/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium">
                                     "Blog"

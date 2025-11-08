@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -143,11 +143,325 @@
                 scroll-behavior: auto;
             }
         }
+        
+        /* Blog Styling */
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .blog-post-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            line-height: 1.7;
+        }
+        
+        .blog-card {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            border: 1px solid rgba(75, 85, 99, 0.3);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: rgba(139, 92, 246, 0.5);
+        }
+        
+        .blog-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #f9fafb;
+            margin-bottom: 0.5rem;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .blog-title:hover {
+            color: #a78bfa;
+            text-decoration: none;
+        }
+        
+        .blog-date {
+            color: #9ca3af;
+            font-size: 0.875rem;
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .blog-excerpt {
+            color: #d1d5db;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .blog-read-more {
+            color: #8b5cf6;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .blog-read-more:hover {
+            color: #a78bfa;
+        }
+        
+        .blog-read-more::after {
+            content: "→";
+            transition: transform 0.2s ease;
+        }
+        
+        .blog-read-more:hover::after {
+            transform: translateX(4px);
+        }
+        
+        /* Individual Blog Post Styling */
+        .blog-post-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(75, 85, 99, 0.3);
+        }
+        
+        .blog-post-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #f9fafb;
+            margin-bottom: 0.75rem;
+            line-height: 1.2;
+        }
+        
+        .blog-post-meta {
+            color: #9ca3af;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .blog-back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #8b5cf6;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: all 0.2s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+        
+        .blog-back-link:hover {
+            background: rgba(139, 92, 246, 0.1);
+            border-color: rgba(139, 92, 246, 0.5);
+            transform: translateX(-4px);
+        }
+        
+        .blog-back-link::before {
+            content: "←";
+            transition: transform 0.2s ease;
+        }
+        
+        .blog-back-link:hover::before {
+            transform: translateX(-4px);
+        }
+        
+        /* Blog Content Typography */
+        .blog-content {
+            color: #e5e7eb;
+        }
+        
+        .blog-content h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #f9fafb;
+            margin: 2rem 0 1rem 0;
+            line-height: 1.3;
+        }
+        
+        .blog-content h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #f3f4f6;
+            margin: 1.75rem 0 0.75rem 0;
+            line-height: 1.3;
+        }
+        
+        .blog-content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #f3f4f6;
+            margin: 1.5rem 0 0.5rem 0;
+            line-height: 1.3;
+        }
+        
+        .blog-content h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #f3f4f6;
+            margin: 1.25rem 0 0.5rem 0;
+        }
+        
+        .blog-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .blog-content ul, .blog-content ol {
+            margin: 1rem 0 1.5rem 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .blog-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .blog-content blockquote {
+            border-left: 4px solid #8b5cf6;
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #d1d5db;
+            background: rgba(139, 92, 246, 0.05);
+            padding: 1rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+        
+        .blog-content code {
+            background: rgba(75, 85, 99, 0.5);
+            color: #fbbf24;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', monospace;
+            font-size: 0.875rem;
+        }
+        
+        .blog-content pre {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            border: 1px solid rgba(75, 85, 99, 0.3);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            line-height: 1.5;
+        }
+        
+        .blog-content pre code {
+            background: none;
+            padding: 0;
+            color: #e5e7eb;
+            font-size: 0.875rem;
+        }
+        
+        .blog-content a {
+            color: #8b5cf6;
+            text-decoration: underline;
+            text-decoration-color: rgba(139, 92, 246, 0.3);
+            text-underline-offset: 2px;
+            transition: all 0.2s ease;
+        }
+        
+        .blog-content a:hover {
+            color: #a78bfa;
+            text-decoration-color: rgba(167, 139, 250, 0.8);
+        }
+        
+        .blog-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .blog-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: rgba(31, 41, 55, 0.5);
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        
+        .blog-content th,
+        .blog-content td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(75, 85, 99, 0.3);
+        }
+        
+        .blog-content th {
+            background: rgba(75, 85, 99, 0.3);
+            font-weight: 600;
+            color: #f9fafb;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blog-container,
+            .blog-post-container {
+                padding: 1rem 0.75rem;
+            }
+            
+            .blog-card {
+                padding: 1rem;
+            }
+            
+            .blog-post-title {
+                font-size: 2rem;
+            }
+            
+            .blog-content h1 {
+                font-size: 1.75rem;
+            }
+            
+            .blog-content h2 {
+                font-size: 1.5rem;
+            }
+            
+            .blog-content h3 {
+                font-size: 1.25rem;
+            }
+            
+            .blog-content pre {
+                padding: 1rem;
+                margin: 1rem 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .blog-post-title {
+                font-size: 1.75rem;
+            }
+            
+            .blog-content h1 {
+                font-size: 1.5rem;
+            }
+            
+            .blog-content h2 {
+                font-size: 1.375rem;
+            }
+            
+            .blog-content pre {
+                padding: 0.75rem;
+                font-size: 0.8rem;
+            }
+        }
     </style>
     
 <script type="module">
-import init, * as bindings from '/landing-page-fc9bdbcef4ab068f.js';
-const wasm = await init({ module_or_path: '/landing-page-fc9bdbcef4ab068f_bg.wasm' });
+import init, * as bindings from '/landing-page-12382af5252d2f32.js';
+const wasm = await init({ module_or_path: '/landing-page-12382af5252d2f32_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -156,7 +470,7 @@ window.wasmBindings = bindings;
 dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
-<link rel="modulepreload" href="/landing-page-fc9bdbcef4ab068f.js" crossorigin="anonymous" integrity="sha384-4aJ7wP97MFmT7eEWs5Zts1ifv/T4Xkxe0sLWcL1/5WzrOru8IWe+0D/QfYgEIpfL"><link rel="preload" href="/landing-page-fc9bdbcef4ab068f_bg.wasm" crossorigin="anonymous" integrity="sha384-oJM+iYYtZXYrM3C/84kw5bV+WhRmdL4uYvgu7rtwZwV01GSupkr2Fr9KVyjuO159" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/landing-page-12382af5252d2f32.js" crossorigin="anonymous" integrity="sha384-bqgrU/rXOyLYQYPgMy+CzsiJ49qm7aKI9cRbb88CDYIo0rv3+kPc352eEC9Gl5I+"><link rel="preload" href="/landing-page-12382af5252d2f32_bg.wasm" crossorigin="anonymous" integrity="sha384-03a4xGvaWj//b6lnRSDM1Hv0lftSt7TjvsZoVvKgZ/3aHQkJMfEileDchezmhYU8" as="fetch" type="application/wasm"></head>
 <body>
 <script>"use strict";
 
