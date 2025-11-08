@@ -3,75 +3,221 @@ use leptos::*;
 #[component]
 pub fn Footer() -> impl IntoView {
     view! {
-        <footer class="bg-gray-900">
-            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    // Company info
-                    <div class="col-span-1 md:col-span-2">
-                        <div class="flex items-center space-x-2 mb-4">
-                            <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                                <span class="text-white font-bold text-lg">"A"</span>
+        <footer class="bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 relative overflow-hidden">
+            // Background pattern
+            <div class="absolute inset-0 opacity-5">
+                <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, #3b82f6 0%, transparent 50%), radial-gradient(circle at 75% 75%, #8b5cf6 0%, transparent 50%);"></div>
+            </div>
+            
+            <div class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+                // Main footer content
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+                    // Company info section (takes up more space)
+                    <div class="lg:col-span-5">
+                        // Logo and company name
+                        <div class="flex items-center space-x-3 mb-6">
+                            <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                                <span class="text-white font-bold text-xl">"A"</span>
                             </div>
-                            <span class="text-xl font-bold text-white">"AtomicIncrement"</span>
+                            <div>
+                                <span class="text-2xl font-bold text-white">"Atomic Increment"</span>
+                                <div class="text-sm text-blue-400 font-medium">"Systems Programming Excellence"</div>
+                            </div>
                         </div>
-                        <p class="text-gray-400 text-sm max-w-md">
-                            "Empowering businesses with next-generation software solutions. Specializing in Rust, high-performance applications, and secure, scalable architectures."
+                        
+                        // Company description
+                        <p class="text-gray-300 text-base leading-relaxed mb-8 max-w-md">
+                            "Pioneering the future of systems programming with Rust expertise, performance optimization, 
+                            and cutting-edge technology solutions. Transforming complex challenges into elegant, scalable systems."
                         </p>
-                        <div class="mt-6 flex space-x-4">
-                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                                <span class="sr-only">"LinkedIn"</span>
-                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                                <span class="sr-only">"GitHub"</span>
-                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                                <span class="sr-only">"Twitter"</span>
-                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                                </svg>
-                            </a>
+                        
+                        // Social media links with improved design
+                        <div class="space-y-4">
+                            <h4 class="text-white font-semibold text-sm uppercase tracking-wider">"Connect With Us"</h4>
+                            <div class="flex space-x-4">
+                                <a 
+                                    href="https://www.linkedin.com/company/atomic-increment-limited/" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="group flex items-center justify-center w-12 h-12 bg-gray-800 rounded-xl hover:bg-blue-600 transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                                >
+                                    <svg class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                
+                                <a 
+                                    href="https://github.com/atomicincrement" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="group flex items-center justify-center w-12 h-12 bg-gray-800 rounded-xl hover:bg-gray-700 transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                                >
+                                    <svg class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                                
+                                <a 
+                                    href="https://x.com/quaternioso" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="group flex items-center justify-center w-12 h-12 bg-gray-800 rounded-xl hover:bg-black transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                                >
+                                    <svg class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    // Quick Links
-                    <div>
-                        <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4">
-                            "Quick Links"
-                        </h3>
-                        <ul class="space-y-3">
-                            <li><a href="/" class="text-gray-300 hover:text-white transition-colors">"Home"</a></li>
-                            <li><a href="/services" class="text-gray-300 hover:text-white transition-colors">"Services"</a></li>
-                            <li><a href="/about" class="text-gray-300 hover:text-white transition-colors">"About"</a></li>
-                            <li><a href="/blog" class="text-gray-300 hover:text-white transition-colors">"Blog"</a></li>
-                            <li><a href="/contact" class="text-gray-300 hover:text-white transition-colors">"Contact"</a></li>
-                        </ul>
-                    </div>
+                    // Navigation sections
+                    <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                        // Navigation links
+                        <div>
+                            <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-6">
+                                "Navigation"
+                            </h3>
+                            <ul class="space-y-4">
+                                <li>
+                                    <a href="/" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                                        <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                        "Home"
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/about" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                                        <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                        "About"
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/#services" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                                        <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                        "Services"
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://atomicincrement.github.io/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                                        <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                        "Blog"
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/#contact" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                                        <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                        "Contact"
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-                    // Contact Info
-                    <div>
-                        <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4">
-                            "Contact"
-                        </h3>
-                        <ul class="space-y-3">
-                            <li class="text-gray-300">"andy@atomicincrement.com"</li>
-                        </ul>
+                        // Services/Expertise
+                        <div>
+                            <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-6">
+                                "Expertise"
+                            </h3>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-gray-300 flex items-center">
+                                        <span class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></span>
+                                        "Rust Development"
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="text-gray-300 flex items-center">
+                                        <span class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></span>
+                                        "Systems Programming"
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="text-gray-300 flex items-center">
+                                        <span class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></span>
+                                        "Performance Optimization"
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="text-gray-300 flex items-center">
+                                        <span class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></span>
+                                        "Blockchain Development"
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="text-gray-300 flex items-center">
+                                        <span class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></span>
+                                        "Technical Training"
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        // Contact information
+                        <div>
+                            <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-6">
+                                "Get In Touch"
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-400 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                    <a href="mailto:andy@atomicincrement.com" class="text-gray-300 hover:text-blue-400 transition-colors">
+                                        "andy@atomicincrement.com"
+                                    </a>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-400 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                    <span class="text-gray-300">
+                                        "United Kingdom"
+                                    </span>
+                                </div>
+
+                                // Quick action button
+                                <div class="pt-2">
+                                    <a 
+                                        href="/#contact" 
+                                        class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-medium rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 hover:shadow-lg transform hover:-translate-y-0.5"
+                                    >
+                                        "Start a Project"
+                                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="mt-8 pt-8 border-t border-gray-800">
-                    <div class="flex flex-col md:flex-row justify-between items-center">
-                        <p class="text-gray-400 text-sm">
-                            "© 2025 AtomicIncrement. All rights reserved."
-                        </p>
-                        <div class="mt-4 md:mt-0 flex space-x-6">
-                            <a href="/privacy" class="text-gray-400 hover:text-white text-sm transition-colors">"Privacy Policy"</a>
-                            <a href="/terms" class="text-gray-400 hover:text-white text-sm transition-colors">"Terms of Service"</a>
+                // Bottom section with copyright and legal links
+                <div class="mt-16 pt-8 border-t border-gray-800">
+                    <div class="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+                        // Copyright
+                        <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                            <p class="text-gray-400 text-sm">
+                                "© 2025 Atomic Increment Ltd. All rights reserved."
+                            </p>
+                            <div class="hidden sm:block w-1 h-1 bg-gray-600 rounded-full"></div>
+                            <p class="text-gray-500 text-xs">
+                                "Crafted with Rust & Leptos"
+                            </p>
+                        </div>
+
+                        // Legal links
+                        <div class="flex items-center space-x-6">
+                            <a href="/privacy" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">
+                                "Privacy Policy"
+                            </a>
+                            <a href="/terms" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">
+                                "Terms of Service"
+                            </a>
+                            <a href="/cookies" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">
+                                "Cookie Policy"
+                            </a>
                         </div>
                     </div>
                 </div>
