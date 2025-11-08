@@ -31,6 +31,7 @@ fn HomePage() -> impl IntoView {
             <HeroSection/>
             <FeaturesSection/>
             <TestimonialsSection/>
+            <CoreCapabilitiesSection/>
             <ContactSection/>
             <Footer/>
         </div>
