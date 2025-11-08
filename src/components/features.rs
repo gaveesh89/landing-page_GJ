@@ -19,21 +19,21 @@ pub fn FeaturesSection() -> impl IntoView {
                         title="Rust Training"
                         description="Comprehensive training programs designed to upskill your development team. From fundamentals to advanced systems programming, our hands-on workshops accelerate Rust adoption with real-world projects and best practices."
                         cta_text="Learn More"
-                        cta_link="/training"
+                        cta_link="/engagement"
                         icon_color="blue"
                     />
                     <ExpertiseCard
                         title="Rust Consulting & Team Augmentation"
                         description="Strategic consulting and expert developers to supplement your team. We provide architectural guidance, code reviews, and embedded expertise to ensure successful Rust implementation and project delivery."
                         cta_text="Get Consulting"
-                        cta_link="/consulting"
+                        cta_link="/engagement"
                         icon_color="purple"
                     />
                     <ExpertiseCard
                         title="Software Development"
                         description="End-to-end software development services leveraging Rust's performance and safety. From high-performance backend systems to blockchain infrastructure, we build scalable solutions that meet enterprise demands."
                         cta_text="Start Project"
-                        cta_link="/development"
+                        cta_link="/engagement"
                         icon_color="emerald"
                     />
                 </div>

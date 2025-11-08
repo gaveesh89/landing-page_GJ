@@ -19,13 +19,14 @@ A modern, high-performance landing page and blog system built with Rust and Lept
 ### 🌐 **Landing Page**
 - **Modern Navigation**: Responsive menu bar with mobile hamburger menu
 - **Hero Section**: Engaging introduction with technical visualization
-- **Features Grid**: Highlighting key differentiators and capabilities
+- **Features Grid**: Highlighting key differentiators and capabilities with unified CTAs
 - **Core Capabilities**: Technical expertise showcase with visual indicators
 - **Testimonials**: Customer feedback and success stories
 - **Recent Projects**: Horizontal scrolling project showcase
 - **About Founder**: Dedicated about page with professional information
 - **Contact Section**: Professional contact form and information
 - **Engagement Form**: Comprehensive project initiation with architectural review process
+- **Unified CTA Flow**: All service inquiries funnel to professional engagement form
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 
 ### 🎯 **Professional Engagement System**
@@ -36,13 +37,20 @@ A modern, high-performance landing page and blog system built with Rust and Lept
 - **Architectural Review**: 48-hour professional project assessment
 - **Clear Process**: Transparent next steps and consultation workflow
 
+### 🎯 **Call-to-Action Flow**
+- **Hero Banner**: "Start Your Project" → `/engagement`
+- **Header**: "Get Started" → `/engagement`
+- **Areas of Expertise**: All 3 CTAs ("Learn More", "Get Consulting", "Start Project") → `/engagement`
+- **Founder Story**: "Learn Our Story" → `/about`
+- **Footer**: "Start a Project" → `#contact`
+
 ### 🧭 **Navigation Structure**
 - **Home**: Main landing page with all sections
 - **Services**: Scrolls to "Areas of Expertise" section on homepage
 - **About**: Dedicated founder and company information page
 - **Blog**: Internal blog system with technical posts and tutorials
 - **Contact**: Direct link to contact section
-- **Get Started**: Professional engagement form for project initiation
+- **Engagement**: Professional project initiation form with architectural review
 
 ### 📝 **Blog System**
 - **Markdown Support**: Full markdown parsing with frontmatter
@@ -233,6 +241,13 @@ Key test coverage:
 5. Open a Pull Request
 
 ## 📋 Recent Updates
+
+### **v1.2.1** - November 8, 2025
+- ✅ **Unified CTA Flow**: All Areas of Expertise CTAs now lead to engagement form
+- ✅ **Professional Funnel**: "Learn More", "Get Consulting", "Start Project" → `/engagement`
+- ✅ **Founder Story Fix**: "Learn Our Story" now correctly links to `/about` page
+- ✅ **Consistent Experience**: Single entry point for all service inquiries
+- ✅ **Documentation**: Updated README with comprehensive CTA flow mapping
 
 ### **v1.2.0** - November 8, 2025
 - ✅ **Engagement Form**: Professional project initiation form with comprehensive parameters

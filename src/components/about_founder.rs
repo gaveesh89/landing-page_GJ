@@ -59,7 +59,7 @@ pub fn AboutFounderSection() -> impl IntoView {
                         {/* CTA */}
                         <div class="mt-10">
                             <a 
-                                href="/story"
+                                href="/about"
                                 class="group inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                             >
                                 "Learn Our Story"
