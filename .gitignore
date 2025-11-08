@@ -18,6 +18,7 @@ node_modules/
 
 # WebAssembly generated files
 pkg/
+dist/
 
 # IDE files
 .vscode/
