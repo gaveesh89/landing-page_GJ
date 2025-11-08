@@ -9,9 +9,9 @@ A modern, high-performance landing page and blog system built with Rust and Lept
 
 ## 🚀 Live Demo
 
-- **Website**: [http://localhost:8080](http://localhost:8080) (development)
-- **Case Studies**: [http://localhost:8080/blog](http://localhost:8080/blog)
-- **About Page**: [http://localhost:8080/about](http://localhost:8080/about)
+- **Website**: [http://127.0.0.1:8080](http://127.0.0.1:8080) (development)
+- **Case Studies**: [http://127.0.0.1:8080/blog](http://127.0.0.1:8080/blog)
+- **About Page**: [http://127.0.0.1:8080/about](http://127.0.0.1:8080/about)
 
 ## ✨ Features
 
@@ -25,6 +25,13 @@ A modern, high-performance landing page and blog system built with Rust and Lept
 - **About Founder**: Dedicated about page with professional information
 - **Contact Section**: Professional contact form and information
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+
+### 🧭 **Navigation Structure**
+- **Home**: Main landing page with all sections
+- **Services**: Quick navigation to services section
+- **About**: Dedicated founder and company information page
+- **Case Studies**: Internal blog system with technical posts and tutorials
+- **Contact**: Direct link to contact section
 
 ### 📝 **Blog System (Case Studies)**
 - **Markdown Support**: Full markdown parsing with frontmatter
@@ -94,7 +101,7 @@ landing-page_GJ/
 │   ├── 📄 blog.rs                   # Blog system with markdown parsing
 │   ├── 📁 components/               # Reusable UI components
 │   │   ├── 📄 mod.rs               # Component module exports
-│   │   ├── 📄 header.rs            # Navigation header with blog links
+│   │   ├── 📄 header.rs            # Navigation header with case studies link
 │   │   ├── 📄 hero.rs              # Hero section with tech visualization
 │   │   ├── 📄 features.rs          # Areas of expertise grid
 │   │   ├── 📄 testimonials.rs      # Customer testimonials
@@ -213,7 +220,23 @@ Key test coverage:
 4. Push to the branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
-## 📄 License
+## � Recent Updates
+
+### **v1.1.0** - November 8, 2025
+- ✅ **Navigation Simplified**: Removed external "Blog" link from header navigation
+- ✅ **Case Studies Focus**: "Case Studies" tab now exclusively points to internal blog system
+- ✅ **Mobile Navigation**: Updated mobile menu to match desktop navigation changes
+- ✅ **Documentation**: Updated README with current navigation structure
+- ✅ **Performance**: Cleaner navigation reduces external dependencies
+
+### **v1.0.0** - November 8, 2025
+- ✅ **Complete Blog System**: Full markdown parsing with frontmatter support
+- ✅ **Professional Styling**: Dark theme with responsive design
+- ✅ **4 Technical Posts**: Comprehensive case studies and tutorials
+- ✅ **Routing System**: Integrated blog routes with main application
+- ✅ **SEO Optimization**: Proper meta tags and structured content
+
+## �📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
